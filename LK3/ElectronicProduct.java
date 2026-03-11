@@ -1,19 +1,19 @@
-class ElectronicProduct extends Product {
+/**
+ *
+ * @author Ridho & Mubin
+ */
+package LK3;
+public class ElectronicProduct extends Product {
 
     private String warrantyPeriod;
 
-    public ElectronicProduct(String id, String name, double price, int stock, String warrantyPeriod) {
-        super(id, name, price, stock);
+    public ElectronicProduct(String productId, String name, double price, int stockQuantity, String warrantyPeriod) {
+        super(productId, name, price, stockQuantity);
         this.warrantyPeriod = warrantyPeriod;
-    }
-
-    public String getWarrantyPeriod() {
-        return warrantyPeriod;
     }
 
     @Override
     public double calculateDiscount() {
-
         double discount = getPrice() * 0.05;
 
         if (getPrice() > 500000) {
@@ -21,5 +21,11 @@ class ElectronicProduct extends Product {
         }
 
         return discount;
+    }
+
+    @Override
+    public void getProductInfo() {
+        super.getProductInfo();
+        System.out.println("Warranty Period : " + warrantyPeriod);
     }
 }
