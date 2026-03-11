@@ -1,61 +1,66 @@
 package LK3;
-import java.util.*;
 
-abstract class Product {
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
 
+/**
+ *
+ * @author Hanif Maulana
+ */
+public abstract class Product {
     private String productId;
     private String name;
     private double price;
     private int stockQuantity;
     
-    public Product() {
-
-    }
-
-    public Product(String productId, String name, double price, int stockQuantity) {
+    public Product (String productId, String name, double price, int stockQuantity){
         this.productId = productId;
         this.name = name;
         this.price = price;
         this.stockQuantity = stockQuantity;
     }
-
-    public String getProductId() {
-        return productId;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public double getPrice() {
+    public double getPrice(){
         return price;
-    }
-
-    public int getStockQuantity() {
+    }   
+    public int stockQuantity(){
         return stockQuantity;
     }
-
-    public void setStockQuantity(int stockQuantity) {
-        this.stockQuantity = stockQuantity;
-    }
-
-    
     public abstract double calculateDiscount();
     
-    public void getProductInfo() {
-        System.out.println("ID Produk : " + productId);
-        System.out.println("Nama      : " + name);
-        System.out.println("Harga     : " + price);
-        System.out.println("Stok      : " + stockQuantity);
+    
+    //setter
+    public void setProductId (String productId){
+        this.productId = productId;
     }
-
-    // Overloading di method ini
-    public void updateStock(int quantity) {
+    public void setName (String name){
+        this.name = name;
+    }
+    public void setPrice (double price){
+        this.price = price;
+    }
+    public void setStockQuantity (int stockQuantity){
+        this.stockQuantity = stockQuantity;
+    }
+    
+    //getter
+    public void getProductInfo(){
+        System.out.println("Product ID : " + productId);
+        System.out.println("Name : " + name);
+        System.out.println("Price : " + price);
+        System.out.println("Stock : " + stockQuantity);
+    }
+    
+    //update stock
+    public void updateStock(int quantity){
         stockQuantity += quantity;
     }
-
-    public void updateStock(int quantity, String reason) {
+    
+    //update stock + reason
+    public void updateStock(int quantity, String reason){
         stockQuantity += quantity;
-        System.out.println("Update stok karena: " + reason);
+        System.out.println("Stock diupdate karena : " + reason);
     }
+    
 }
