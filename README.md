@@ -1,6 +1,6 @@
 # PemrogramanLanjut
 
-**Shop Management System** adalah program sederhana berbasis **Java** yang dibuat untuk mempraktikkan konsep **Object-Oriented Programming (OOP)**. Program ini mensimulasikan sistem pengelolaan toko yang dapat menyimpan berbagai jenis produk dan memproses transaksi penjualan.
+**Shop Management System** adalah program sederhana menggunakan bahasa **Java** yang dibuat untuk mempraktikkan konsep **Object-Oriented Programming**. Program ini mensimulasikan sistem pengelolaan toko yang dapat menyimpan berbagai jenis produk dan memproses transaksi penjualan. tanda kutip hanya "simulasi", bukan program interaktif.
 
 Sistem ini memiliki **class utama `Product`** yang menjadi dasar bagi beberapa jenis produk lain seperti **`ClothingProduct`**, **`ElectronicProduct`**, dan **`FoodProduct`**. Setiap jenis produk memiliki atribut tambahan yang sesuai dengan kategorinya.
 
@@ -8,13 +8,13 @@ Selain itu, terdapat class **`Transaction`** yang berfungsi untuk mengelola pros
 
 Program ini menerapkan beberapa konsep penting dalam OOP, antara lain:
 
-* **Class dan Object** untuk merepresentasikan entitas dalam sistem
+* **Class dan Object** untuk membuat cetakan dari objek
 * **Constructor** untuk menginisialisasi objek
 * **Inheritance** untuk mewarisi atribut dan method dari class `Product`
 * **Polymorphism dan Method Overriding** melalui method `getProductInfo()`
 * **Method Overloading** pada method `addItem()` di class `Transaction`
 
-Melalui struktur ini, program menjadi lebih **terorganisir, modular, dan mudah dikembangkan** untuk fitur yang lebih kompleks di masa depan.
+Melalui struktur ini, program menjadi lebih **terorganisir, modular, dan mudah dikembangkan**.
 
 # Author
 Kelompok 6 / Kelas C :
