@@ -1,15 +1,23 @@
+
+/**
+ *
+ * @author Hamam
+ */
+
 package LK3;
+
 public class ShopManagementSystem {
 
     public static void main(String[] args) {
-        // disini polymorphismnya, pake array
+
+        // Array polymorphism
         Product[] products = new Product[6];
 
-        products[0] = new FoodProduct("F01", "makan", 10000, 20, "2026-05-01");
-        products[1] = new FoodProduct("F02", "air", 15000, 5, "2026-04-01");
+        products[0] = new FoodProduct("F01", "Mie ayam uenak", 10000, 20, "2026-10-11");
+        products[1] = new FoodProduct("F02", "Es teh anget", 15000, 5, "2026-10-10");
 
-        products[2] = new ElectronicProduct("E01", "Mouse", 200000, 15, "1 Tahun");
-        products[3] = new ElectronicProduct("E02", "Keyboard", 600000, 10, "2 Tahun");
+        products[2] = new ElectronicProduct("E01", "Kulkas", 200000, 15, "1 Tahun");
+        products[3] = new ElectronicProduct("E02", "Mouse", 600000, 10, "2 Tahun");
 
         products[4] = new ClothingProduct("C01", "Kaos", 120000, 30, "L", "Uniqlo");
         products[5] = new ClothingProduct("C02", "Jaket", 250000, 10, "M", "Nike");
@@ -25,7 +33,8 @@ public class ShopManagementSystem {
             System.out.println("Diskon : " + discount);
             System.out.println("---------------------");
         }
-        //contoh transaksi pertama
+
+        // Transaksi 1
         Transaction t1 = new Transaction("T01");
 
         t1.addItem(products[0]);
@@ -33,7 +42,7 @@ public class ShopManagementSystem {
 
         double total1 = t1.processSale();
 
-        //cotnh transaksi kedua
+        // Transaksi 2
         Transaction t2 = new Transaction("T02");
 
         t2.addItem(products[4], 2);
