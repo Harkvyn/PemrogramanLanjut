@@ -13,14 +13,14 @@ public class ShopManagementSystem {
         // Array polymorphism
         Product[] products = new Product[6];
 
-        products[0] = new FoodProduct("F01", "Mie ayam uenak", 10000, 20, "2026-10-11");
-        products[1] = new FoodProduct("F02", "Es teh anget", 15000, 5, "2026-10-10");
+        products[0] = new FoodProduct("F01", "Mie ayam uenak", 15000, 20, "2026-10-11");
+        products[1] = new FoodProduct("F02", "Es teh anget", 2000, 5, "2026-10-10");
 
-        products[2] = new ElectronicProduct("E01", "Kulkas", 200000, 15, "1 Tahun");
-        products[3] = new ElectronicProduct("E02", "Mouse", 600000, 10, "2 Tahun");
+        products[2] = new ElectronicProduct("E01", "Kulkas", 250000, 15, "1 Tahun");
+        products[3] = new ElectronicProduct("E02", "Mouse", 666666, 10, "2 Tahun");
 
-        products[4] = new ClothingProduct("C01", "Kaos", 120000, 30, "L", "Uniqlo");
-        products[5] = new ClothingProduct("C02", "Jaket", 250000, 10, "M", "Nike");
+        products[4] = new ClothingProduct("C01", "Kaos", 1000, 30, "L", "Uniqlo");
+        products[5] = new ClothingProduct("C02", "Jaket", 2000, 10, "M", "Nike");
 
         System.out.println("=== DAFTAR PRODUK ===");
 
