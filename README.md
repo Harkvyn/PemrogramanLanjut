@@ -15,3 +15,11 @@ Program ini menerapkan beberapa konsep penting dalam OOP, antara lain:
 * **Method Overloading** pada method `addItem()` di class `Transaction`
 
 Melalui struktur ini, program menjadi lebih **terorganisir, modular, dan mudah dikembangkan** untuk fitur yang lebih kompleks di masa depan.
+
+# Author
+Kelompok 6 / Kelas C :
+1. Abraham Samuelson Siregar [255150200111030]
+2. Muhammad Dzaky Nuril Mubin [255150201111019]
+3. Ridho Alfarizi [255150207111039]
+4. Hanif Maulana [255150207111042]
+5. Hamam Yusuf Abdulloh [255150207111050]
